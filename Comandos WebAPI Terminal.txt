@@ -1,0 +1,38 @@
+Desde la consola:
+	dotnet -h -> Podemos ver las opciones y crear nuestros proyectos.
+	code . -> Ubicados dentro de una carpeta, abriría CODE mostrando sus elementos
+
+Dentro de la aplicaci�n:
+	dotnet run	-> Lanza la aplicación WebApi
+	dotnet watch run -> Lanza la aplicación WebApi pero nos permite hacer cambios que se van actualizando
+
+	dotnet ef -h -> nos da todas las opciones para crear nuestra base de datos (ver en profundidad)
+
+
+
+ANGULAR
+Para lanzar el servidor y visualizar la página en Angular, debemos posicionarnos con el terminal en la carpeta que contiene
+el proyecto en Angular y escribir -> ng serve
+
+Colocamos localhost:4200 y veremos la página
+
+A través de EXTENSIONS: MARKETPLACE tendremos que instalar: Angular v6 Snippets (para escribir más rápido)
+		Angular Files (para crear componentes más rápidamente)
+		Angular Language Service (autocompleta, va a definiciones, ....)
+		angular2-switcher (navegar entre los elementos de un componente) [alt+o, alt+i, alt+u, alt+p]
+		Auto Rename Tag
+		Bracket Pair Colorizer
+		debugger for Chrome
+		Material Icon Theme
+		Path Intellisense	(para autocompletar rutas)
+		Prettier - Code Formatter
+		TSLint (para identificar si hay código mal escrito)
+
+
+BOOTSTRAP Y FONT-AWESOME
+Para instalar Bootstrap y Font-Awesome en nuestro proyecto debemos posicionarnos por consola en la carpeta donde se ubica 
+el proyecto Angular y teclear -> npm install bootstrap font-awesome
+
+Para usarlos hemos de introducir en styles.css (general):
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
