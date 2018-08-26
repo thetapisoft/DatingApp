@@ -36,3 +36,29 @@ el proyecto Angular y teclear -> npm install bootstrap font-awesome
 Para usarlos hemos de introducir en styles.css (general):
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+
+GIT
+Descargar la última versión desde: git-scm.com
+
+Para poder usar un mismo repositorio para varios proyectos hay que eliminar primero todas las carpetas ocultas de git
+que haya.
+Podemos usar el comando 'git status' en cada proyecto para ver si hay o no documentos para el control de código.
+
+Dentro del proyecto de Angular hay un archivo que se llama .gitignore que nos permite no trazar los cambios que se produzcan en 
+esos archivos.
+
+Para iniciar un git nuevo usamos -> git init (Lo hacemos en la carpeta que contenga todos nuestros archivos)
+
+En cada uno de los proyectos debe haber un archivo .gitignore para poder ignorar aquello que deseemos.
+
+
+
+ENTITY FRAMEWORK
+
+Tecleamos en el terminal -> dotnet ef -h para ver todas las opciones.
+
+Una vez actualicemos el EF y queramos crear una nueva migración --> dotnet ef migrations add 'Texto'.
+																	dotnet ef  migrations add AddedUserEntity
+Para que los cambios tengan efecto en nuestra base de datos --> dotnet ef database update
+
